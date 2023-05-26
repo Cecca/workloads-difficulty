@@ -61,7 +61,7 @@ def run_benchmark(k=10, runs=10):
                     for chunk in r.iter_content(chunk_size=8192): 
                         f.write(chunk)
 
-        with h5py.File(datafile) as hfp:
+        with h5py.File(data_file) as hfp:
             dataset = hfp['train'][:]
             queries = hfp['test'][:]
 
