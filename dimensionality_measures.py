@@ -112,7 +112,7 @@ if __name__ == "__main__":
         y    = "recall",
         x    = "lid"
     )
-    plt.savefig("scatter-recall-lid.png")
+    plt.savefig("imgs/scatter-recall-lid.png")
 
     plt.figure()
     sns.scatterplot(
@@ -120,7 +120,7 @@ if __name__ == "__main__":
         y    = "recall",
         x    = "rc"
     )
-    plt.savefig("scatter-recall-rc.png")
+    plt.savefig("imgs/scatter-recall-rc.png")
 
     plt.figure()
     sns.scatterplot(
@@ -128,5 +128,5 @@ if __name__ == "__main__":
         y    = "recall",
         x    = "expansion"
     )
-    plt.savefig("scatter-recall-expansion.png")
+    plt.savefig("imgs/scatter-recall-expansion.png")
 
