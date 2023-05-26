@@ -63,7 +63,7 @@ def run_benchmark(k=10, runs=10):
 
         with h5py.File(datafile) as hfp:
             dataset = hfp['train'][:]
-            queries = hfp['test']
+            queries = hfp['test'][:]
 
         index = faiss.IndexHNSWFlat(dataset.shape[1], 16)
         index.add(dataset)
